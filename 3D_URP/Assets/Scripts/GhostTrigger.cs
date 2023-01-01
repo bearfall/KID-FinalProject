@@ -5,29 +5,42 @@ namespace bearfall
 
     public class GhostTrigger : MonoBehaviour
     {
+
         [SerializeField, Header("鬼魂編號")]
-        private GameObject ghostnumber;
-        [SerializeField, Header("鬼魂動作")]
-        private Animation Animation;
-        private bool isGo = false;
+        private GameObject ghost;
+        [SerializeField, Header("動畫")]
+        private Animator Animator;
+        [SerializeField, Header("聲音來源")]
+        private AudioSource Aud;
+        [SerializeField, Header("聲音")]
+        private AudioClip Oop;
 
-       
-        private void OnTriggerEnter()
+
+
+
+        private void Start()
         {
-            GoGhostGo();
+            Animator = ghost.GetComponent<Animator>();
+            Aud = ghost.GetComponent<AudioSource>();
         }
+        private void OnTriggerEnter(Collider other)
+        {
+            print(other.name);
+            GoGhostGo();
+            PlaySound(Oop);
+            transform.GetComponent<Collider>().enabled = false;
 
+
+        }
+        public void PlaySound(AudioClip sound)
+        {
+            Aud.PlayOneShot(sound);
+        }
         void GoGhostGo()
         {
-            ghostnumber = GetComponent<GameObject>();
-            Animation = GetComponent<Animation>();
-            if (isGo = false)
-            {
-                Animation.Play("鬼魂1");
-                isGo = true
-            } 
-
-
+                Animator.enabled = true;
+           
         }
+
     }
 }
