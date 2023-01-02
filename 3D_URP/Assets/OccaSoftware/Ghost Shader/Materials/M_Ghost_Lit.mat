@@ -29,7 +29,8 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -122,6 +123,7 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -145,13 +147,14 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 0
     m_Colors:
     - Color_39594e77c71d4eb48afcf997cda76117: {r: 1.5642776, g: 2.8388743, b: 3.6886053,
         a: 0}
     - Color_a293635786174851915c48f95460e9e7: {r: 0, g: 0, b: 0, a: 0}
-    - Color_e649d97becec41be883dd5b6d677c0cc: {r: 0.060813442, g: 0.06306579, b: 0.10811279,
-        a: 0}
+    - Color_e649d97becec41be883dd5b6d677c0cc: {r: 0, g: 0.3090302, b: 1.0205683, a: 0}
     - Color_f3edd8bee3f9499c8ea7b8627e5d7164: {r: 1, g: 0, b: 0, a: 0}
     - Color_f41ea9d6cc7943488a4bce7ca13f02e9: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
