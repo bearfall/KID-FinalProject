@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0abfe0c4956f004abb1a0bf7795b1c6, type: 3}
-  m_Name: doorActive
+  m_Name: KitchenKey
   m_EditorClassIdentifier: 
-  dialogueName: "\u9580"
-  dialogueContents:
-  - "\u9019\u6A23\u61C9\u8A72\u5C31\u80FD\u958B\u9580\u4E86\u5427?"
+  dialogueName: "\u6211"
+  dialogueContents: []
