@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: KitchenKey
   m_EditorClassIdentifier: 
   dialogueName: "\u6211"
-  dialogueContents: []
+  dialogueContents:
+  - "\u54A6 \u9019\u662F\u751A\u9EBC?"
+  - "\u9470\u5319?\u600E\u9EBC\u6703\u4E1F\u5728\u9019\u7A2E\u5730\u65B9?"

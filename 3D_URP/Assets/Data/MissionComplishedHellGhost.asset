@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0abfe0c4956f004abb1a0bf7795b1c6, type: 3}
-  m_Name: BasementDoorActive
+  m_Name: MissionComplishedHellGhost
   m_EditorClassIdentifier: 
-  dialogueName: "\u9580"
+  dialogueName: "\u9818\u4E3B\u9B3C\u9B42"
   dialogueContents:
-  - "\u6253\u958B\u662F\u6253\u958B\u4E86..."
-  - "\u4F46\u662F\u611F\u89BA\u6709\u4E00\u9EDE\u9670\u68EE....."
+  - "\u57CB\u846C\u597D\u4E86\u55CE?"
+  - "\u8B1D\u8B1D\u4F60\u7684\u5E6B\u5FD9!"
+  - "\u684C\u4E0A\u662F\u7D04\u5B9A\u597D\u8981\u7D66\u4F60\u7684\u85E5\u8349"
+  - "\u9019\u6A23\u6211\u5C31\u80FD\u5B89\u5FC3\u7684\u5347\u5929\u4E86"

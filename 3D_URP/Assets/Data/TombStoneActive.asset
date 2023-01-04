@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0abfe0c4956f004abb1a0bf7795b1c6, type: 3}
-  m_Name: BasementDoorActive
+  m_Name: TombStoneActive
   m_EditorClassIdentifier: 
-  dialogueName: "\u9580"
+  dialogueName: "\u6211"
   dialogueContents:
-  - "\u6253\u958B\u662F\u6253\u958B\u4E86..."
-  - "\u4F46\u662F\u611F\u89BA\u6709\u4E00\u9EDE\u9670\u68EE....."
+  - "\u9019\u6A23\u61C9\u8A72\u5C31\u653E\u597D\u4E86"

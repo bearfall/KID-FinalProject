@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0abfe0c4956f004abb1a0bf7795b1c6, type: 3}
-  m_Name: Key
+  m_Name: HellDoorActive
   m_EditorClassIdentifier: 
-  dialogueName: "\u6211"
+  dialogueName: "\u9580"
   dialogueContents:
-  - "\u54A6 \u9019\u662F\u751A\u9EBC?"
-  - "\u9470\u5319?\u600E\u9EBC\u6703\u4E1F\u5728\u9019\u7A2E\u5730\u65B9?"
+  - "\u5927\u9580\u958B\u4E86!"

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: HallKey
   m_EditorClassIdentifier: 
   dialogueName: "\u6211"
-  dialogueContents: []
+  dialogueContents:
+  - "\u9019\u88E1\u4E5F\u6709\u9470\u5319?"

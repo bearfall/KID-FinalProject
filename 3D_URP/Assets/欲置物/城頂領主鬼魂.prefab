@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5056895086140507330}
   - component: {fileID: 488770233}
   - component: {fileID: 665888541}
+  - component: {fileID: 665888546}
   m_Layer: 0
   m_Name: "\u57CE\u9802\u9818\u4E3B\u9B3C\u9B42"
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e96101b599bfb8344a2a4b9b9cec7e17, type: 2}
+  - {fileID: 2100000, guid: 131d28f18d587ef43b4a2bd1b3919324, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 6714109729963861271}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 596cef0f26cbf2c4d9e7356a08898595, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -150,3 +151,16 @@ MonoBehaviour:
   onDialogueFinishAfterActive:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &665888546
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714109729963861271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030151285, y: 0.028333576, z: 0.027516685}
+  m_Center: {x: 0.0009588845, y: -0.00022324103, z: 0.01406823}
