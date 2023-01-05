@@ -24,15 +24,16 @@ namespace bearfall
         /// <summary>
         /// 重新遊戲
         /// </summary>
-        private Button btnReplay;
+        private TextMeshProUGUI textReplay;
         private void Awake()
         {
             instance = this;
 
             groupFinal = GameObject.Find("結束畫布").GetComponent<CanvasGroup>();
             textTitle = GameObject.Find("結束標題").GetComponent<TextMeshProUGUI>();
-            btnReplay = GameObject.Find("重新遊戲").GetComponent<Button>();
-            btnReplay.onClick.AddListener(Replay);
+            textReplay = GameObject.Find("重新開始").GetComponent<TextMeshProUGUI>();
+
+
         }
         /// <summary>
         /// 遊戲結束
@@ -60,9 +61,6 @@ namespace bearfall
             
         }
 
-        private void Replay()
-        {
-            SceneManager.LoadScene("開始選單");
-        }
+       
     }
 }

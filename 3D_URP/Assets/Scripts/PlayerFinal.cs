@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
-
+using UnityEngine.SceneManagement;
 namespace bearfall
 {
+    
     /// <summary>
     /// 玩家結束管理:死亡或過關
     /// </summary>
 
     public class PlayerFinal : MonoBehaviour
     {
+        [SerializeField, Header("會造成傷害的目標")]
+        private string nameTarget;
 
         private void OnDestroy()
         {
-            //死亡
-            FinalManager.instance.GameOver("挑戰失敗");
+            FinalManager.instance.GameOver("遊戲結束");
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
