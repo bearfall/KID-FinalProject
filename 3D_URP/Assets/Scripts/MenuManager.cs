@@ -12,15 +12,20 @@ namespace bearfall
         /// <summary>
         /// 開始遊戲
         /// </summary>
-        private Button btnPlay;
-        private void Awake()
+        [SerializeField, Header("對話按鍵")]
+        private KeyCode dialogueKey = KeyCode.KeypadEnter;
+        private void Update()
         {
-            btnPlay = GameObject.Find("開始遊戲").GetComponent<Button>();
-            btnPlay.onClick.AddListener(StartGame);
+            GetStart();
         }
-        private void StartGame()
+
+        public void GetStart()
         {
-            SceneManager.LoadScene("遊戲場景");
+            if (Input.GetKeyDown(dialogueKey))
+            {
+                print("我按了Enter");
+                SceneManager.LoadScene("遊戲場景");
+            }
         }
     }
 }

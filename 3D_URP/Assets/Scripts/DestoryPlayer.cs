@@ -27,7 +27,7 @@ namespace bearfall
                 playerInput.enabled = false;
             }
         }
-        public void Replay()
+        private void Replay()
         {
             if (Input.GetKeyDown(dialogueKey))
             {
