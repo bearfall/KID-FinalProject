@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4161654591378886524}
   - component: {fileID: 4161654591379885500}
   - component: {fileID: 4161654591383993820}
-  - component: {fileID: 8118710378637389524}
   m_Layer: 0
   m_Name: Dungeon_Hall_Wall
   m_TagString: Untagged
@@ -100,19 +99,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8060529562001817665, guid: f4079b0aba0b260459fe9242fe0afbbd, type: 3}
---- !u!114 &8118710378637389524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4161654591381885820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 0
-  m_Area: 0
-  m_IgnoreFromBuild: 1
-  m_AffectedAgents: ffffffff
