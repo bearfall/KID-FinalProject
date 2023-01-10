@@ -17,6 +17,7 @@ namespace bearfall
         /// 結束畫布
         /// </summary>
         private CanvasGroup groupFinal;
+     
         /// <summary>
         /// 結束標題
         /// </summary>
@@ -24,14 +25,14 @@ namespace bearfall
         /// <summary>
         /// 重新遊戲
         /// </summary>
-        private TextMeshProUGUI textReplay;
+       
         private void Awake()
         {
             instance = this;
 
             groupFinal = GameObject.Find("結束畫布").GetComponent<CanvasGroup>();
             textTitle = GameObject.Find("結束標題").GetComponent<TextMeshProUGUI>();
-            textReplay = GameObject.Find("重新開始").GetComponent<TextMeshProUGUI>();
+
 
 
         }

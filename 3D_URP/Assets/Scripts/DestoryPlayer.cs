@@ -9,8 +9,8 @@ namespace bearfall
         [SerializeField, Header("會造成傷害的目標")]
         private string nameTarget;
         private PlayerInput playerInput;
-        [SerializeField, Header("對話按鍵")]
-        private KeyCode dialogueKey = KeyCode.R;
+        
+        
         
         void Start()
         {
@@ -22,20 +22,12 @@ namespace bearfall
             print("碰撞:" + other.gameObject);
             if (other.gameObject.name.Contains(nameTarget))
             {
-                FinalManager.instance.GameOver("遊戲結束");
-                Replay();
+                FinalManager.instance.GameOver("你已死亡");
+               
                 playerInput.enabled = false;
             }
         }
-        private void Replay()
-        {
-            if (Input.GetKeyDown(dialogueKey))
-            {
-                print("我按了R");
-                SceneManager.LoadScene("開始選單");
-            }
-
-        }
+       
         // Update is called once per frame
         void Update()
         {
