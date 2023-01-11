@@ -71,5 +71,5 @@ Material:
     - _bits: 16
     m_Colors:
     - Color_1: {r: 1.7411011, g: 1.7411011, b: 1.7411011, a: 1}
-    - _Color: {r: 51.377876, g: 51.377876, b: 51.377876, a: 1}
+    - _Color: {r: 9.734288, g: 9.734288, b: 9.734288, a: 1}
   m_BuildTextureStacks: []

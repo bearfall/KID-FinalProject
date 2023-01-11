@@ -19,7 +19,7 @@ namespace bearfall
         private DialogueData dataDialogueActive;
         private string nameTarget = "PlayerCapsule";
         private DialogueSystem dialogueSystem;
-
+        
         [SerializeField, Header("啟動後對話結束後的事件")]
         private UnityEvent onDialogueFinishAfterActive;
 
@@ -43,7 +43,20 @@ namespace bearfall
                 }
             }
         }
-
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.name.Contains(nameTarget))
+            {
+                if (propActive == null || propActive.activeInHierarchy)
+                {
+                    dialogueSystem.StartDialogue(dataDialogue, onDialogueFinish);
+                }
+                else
+                {
+                    dialogueSystem.StartDialogue(dataDialogueActive, onDialogueFinishAfterActive);
+                }
+            }
+        }
         
 
         
