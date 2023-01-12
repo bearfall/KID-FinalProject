@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 namespace bearfall
 {
 
@@ -8,9 +8,9 @@ namespace bearfall
 
        
        
-        [SerializeField, Header("°l¤H°­»î")]
+        [SerializeField, Header("è¿½äººé¬¼é­‚")]
         private GameObject badGhost;
-        [SerializeField, Header("°l¤H°­»î¥Í¦¨ÂI")]
+        [SerializeField, Header("è¿½äººé¬¼é­‚ç”Ÿæˆé»")]
         private Transform spawnBadGhost;
         
 

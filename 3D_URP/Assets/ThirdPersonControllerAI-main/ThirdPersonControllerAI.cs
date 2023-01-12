@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 // The modified version of ThirdPersonController to control AI Characters using third person controller provided by Unity.

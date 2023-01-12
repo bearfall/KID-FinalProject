@@ -1,37 +1,37 @@
-using Unity.VisualScripting;
+ï»¿using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 namespace bearfall
 {
     /// <summary>
-    /// ¤¬°Ê¨t²Î:°»´úª±®a¬O§_¶i¤J¨Ã¥B°õ¦æ¤¬°Ê¦æ¬°
+    /// äº’å‹•ç³»çµ±:åµæ¸¬ç©å®¶æ˜¯å¦é€²å…¥ä¸¦ä¸”åŸ·è¡Œäº’å‹•è¡Œç‚º
     /// </summary>
 
     public class InteractableSystem : MonoBehaviour
     {
-        [SerializeField, Header("²Ä¤@¬q¹ï¸Ü¸ê®Æ")]
+        [SerializeField, Header("ç¬¬ä¸€æ®µå°è©±è³‡æ–™")]
         private DialogueData dataDialogue;
-        [SerializeField, Header("¹ï¸Üµ²§ô«áªº¨Æ¥ó")]
+        [SerializeField, Header("å°è©±çµæŸå¾Œçš„äº‹ä»¶")]
         private UnityEvent onDialogueFinish;
-        [SerializeField, Header("±Ò°Ê¹D¨ã")]
+        [SerializeField, Header("å•Ÿå‹•é“å…·")]
         private GameObject propActive;
-        [SerializeField, Header("±Ò°Ê«áªº¹ï¸Ü¸ê®Æ")]
+        [SerializeField, Header("å•Ÿå‹•å¾Œçš„å°è©±è³‡æ–™")]
         private DialogueData dataDialogueActive;
         private string nameTarget = "PlayerCapsule";
         private DialogueSystem dialogueSystem;
         
-        [SerializeField, Header("±Ò°Ê«á¹ï¸Üµ²§ô«áªº¨Æ¥ó")]
+        [SerializeField, Header("å•Ÿå‹•å¾Œå°è©±çµæŸå¾Œçš„äº‹ä»¶")]
         private UnityEvent onDialogueFinishAfterActive;
 
 
         private void Awake()
         {
-            dialogueSystem = GameObject.Find("µe¥¬¹ï¸Ü¨t²Î").GetComponent<DialogueSystem>();
+            dialogueSystem = GameObject.Find("ç•«å¸ƒå°è©±ç³»çµ±").GetComponent<DialogueSystem>();
         }
 
-        public void HitByRaycast() //³Q®g½u¥´¨ì®É·|¶i¤J¦¹¤èªk
+        public void HitByRaycast() //è¢«å°„ç·šæ‰“åˆ°æ™‚æœƒé€²å…¥æ­¤æ–¹æ³•
         {
-            if (Input.GetKeyDown(KeyCode.E)) //·í«ö¤UÁä½L E Áä®É
+            if (Input.GetKeyDown(KeyCode.E)) //ç•¶æŒ‰ä¸‹éµç›¤ E éµæ™‚
             {
                 if (propActive == null || propActive.activeInHierarchy)
                 {

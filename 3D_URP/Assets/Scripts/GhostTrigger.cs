@@ -1,4 +1,4 @@
-using UnityEngine;
+锘縰sing UnityEngine;
 namespace bearfall
 {
 
@@ -6,13 +6,13 @@ namespace bearfall
     public class GhostTrigger : MonoBehaviour
     {
 
-        [SerializeField, Header("碍活絪腹")]
+        [SerializeField, Header("楝奸瓊绶ㄨ櫉")]
         private GameObject ghost;
-        [SerializeField, Header("笆礶")]
+        [SerializeField, Header("鍕曠暙")]
         private Animator Animator;
-        [SerializeField, Header("羘ㄓ方")]
+        [SerializeField, Header("鑱查煶渚嗘簮")]
         private AudioSource Aud;
-        [SerializeField, Header("羘")]
+        [SerializeField, Header("鑱查煶")]
         private AudioClip Oop;
 
 

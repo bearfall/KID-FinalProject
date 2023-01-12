@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 namespace bearfall
@@ -6,7 +6,7 @@ namespace bearfall
 
     public class DestoryPlayer : MonoBehaviour
     {
-        [SerializeField, Header("·|³y¦¨¶Ë®`ªº¥Ø¼Ğ")]
+        [SerializeField, Header("æœƒé€ æˆå‚·å®³çš„ç›®æ¨™")]
         private string nameTarget;
         private PlayerInput playerInput;
         
@@ -19,10 +19,10 @@ namespace bearfall
         }
         private void OnCollisionEnter(Collision other)
         {
-            print("¸I¼²:" + other.gameObject);
+            print("ç¢°æ’:" + other.gameObject);
             if (other.gameObject.name.Contains(nameTarget))
             {
-                FinalManager.instance.GameOver("§A¤w¦º¤`");
+                FinalManager.instance.GameOver("ä½ å·²æ­»äº¡");
                
                 playerInput.enabled = false;
             }

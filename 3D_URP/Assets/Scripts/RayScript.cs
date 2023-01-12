@@ -1,34 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RayScript : MonoBehaviour
+ï»¿using UnityEngine;
+namespace bearfall
 {
-    Ray ray; //®g½u
-    float raylength = 1.5f; //®g½u³Ì¤jªø«×
-    RaycastHit hit; //³Q®g½u¥´¨ìªºª«¥ó
-    // Start is called before the first frame update
 
 
-    void Update()
+    public class RayScript : MonoBehaviour
     {
-        ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
-        //¥ÑÄá¼v¾÷®g¨ì¬Oµe­±¥¿¤¤¥¡ªº®g½u
+        Ray ray; //å°„ç·š
+        float raylength = 1.5f; //å°„ç·šæœ€å¤§é•·åº¦
+        RaycastHit hit; //è¢«å°„ç·šæ‰“åˆ°çš„ç‰©ä»¶
 
-        if (Physics.Raycast(ray, out hit, raylength))
-        // (®g½u,out ³Q®g½u¥´¨ìªºª«¥ó,®g½uªø«×)¡Aout hit ·N«ä¬O¡G§â"³Q®g½u¥´¨ìªºª«¥ó"±aµ¹hit
+
+
+        void Update()
         {
-            hit.transform.SendMessage("HitByRaycast", gameObject, SendMessageOptions.DontRequireReceiver);
-            //¦V³Q®g½u¥´¨ìªºª«¥ó©I¥s¦W¬°"HitByRaycast"ªº¤èªk¡A¤£»İ­n¶Ç¦^ÂĞ
+            ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+            //ç”±æ”å½±æ©Ÿå°„åˆ°æ˜¯ç•«é¢æ­£ä¸­å¤®çš„å°„ç·š
 
-            Debug.DrawLine(ray.origin, hit.point, Color.yellow);
-            //·í®g½u¥´¨ìª«¥ó®É·|¦bSceneµøµ¡µe¥X¶À½u¡A¤è«K¬d¾\
+            if (Physics.Raycast(ray, out hit, raylength))
+            // (å°„ç·š,out è¢«å°„ç·šæ‰“åˆ°çš„ç‰©ä»¶,å°„ç·šé•·åº¦)ï¼Œout hit æ„æ€æ˜¯ï¼šæŠŠ"è¢«å°„ç·šæ‰“åˆ°çš„ç‰©ä»¶"å¸¶çµ¦hit
+            {
+                hit.transform.SendMessage("HitByRaycast", gameObject, SendMessageOptions.DontRequireReceiver);
+                //å‘è¢«å°„ç·šæ‰“åˆ°çš„ç‰©ä»¶å‘¼å«åç‚º"HitByRaycast"çš„æ–¹æ³•ï¼Œä¸éœ€è¦å‚³å›è¦†
 
-            print(hit.transform.name);
-            //¦bConsoleµøµ¡¦L¥X³Q®g½u¥´¨ìªºª«¥ó¦WºÙ¡A¤è«K¬d¾\                       
-        }
-        else
-        {
+                Debug.DrawLine(ray.origin, hit.point, Color.yellow);
+                //ç•¶å°„ç·šæ‰“åˆ°ç‰©ä»¶æ™‚æœƒåœ¨Sceneè¦–çª—ç•«å‡ºé»ƒç·šï¼Œæ–¹ä¾¿æŸ¥é–±
+
+                print(hit.transform.name);
+                //åœ¨Consoleè¦–çª—å°å‡ºè¢«å°„ç·šæ‰“åˆ°çš„ç‰©ä»¶åç¨±ï¼Œæ–¹ä¾¿æŸ¥é–±                       
+            }
+            else
+            {
+            }
         }
     }
 }
